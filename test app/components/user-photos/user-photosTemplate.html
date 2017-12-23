@@ -1,0 +1,16 @@
+<md-content>
+	<ul class="photos">
+	  			<li class="pictures" ng-repeat="photo in allPhotos">
+	  				<p class = "image"> User ID: {{photo.user_id}} </p>
+	  				<p class="image"> Photo ID: {{photo._id}}</p>
+					<p class = "image"> Posted: {{photo.date_time}} </p>
+					<img ng-src = "images/{{photo.file_name}}">
+					<ul class = "photos">
+						<li class = "pictures" ng-repeat="comment in photo.comments">
+							<p class = "image"> {{comment.user.first_name}}
+							 {{comment.user.last_name}}: "{{comment.comment}}"  ({{comment.date_time}}) </p>
+						</li>
+					</ul>
+	  			</li>
+	  		</ul>
+</md-content>

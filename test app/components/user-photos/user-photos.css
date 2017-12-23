@@ -1,0 +1,24 @@
+.photos{
+	list-style-type: none;
+	list-style-position: inside;
+	background: #8f9dec;
+	padding: 20px;
+}
+
+.pictures{
+	background: #3f51b5;
+	margin: 5px;
+}
+
+.image{
+	display: block;
+	align-content: center;
+	color: white;
+	font-size: 12px;
+	font-family: 'Verdana';
+	padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px dashed white;
+}

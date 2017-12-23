@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="mdl/material.min.css">
+        <script src="mdl/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<md-content>
+	<div class = "profile" >
+		<p class="username"> {{userDetails.first_name}} {{userDetails.last_name}}</p>
+		<p class = "id"> User ID: {{userDetails._id}} </p>
+		<p class = "aboutme"> Location: {{userDetails.location}} || Occupation: {{userDetails.occupation}} </p>
+		Description: {{userDetails.description}}
+		<br>
+		<br>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click = "seePhotos(userDetails._id)">
+		  My photos
+		</button>
+	</div>
+</md-content>
